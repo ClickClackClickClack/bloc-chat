@@ -1,0 +1,18 @@
+.chatrooms {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  min-height: 100px;
+  height: 600px;
+  color: white;
+  background-color: #bbb;
+}
+/*
+.main {
+  position: absolute;
+  right: 0px;
+  width: 1000px;
+  border: 2px dashed red;
+  color: black;
+}
+*/
