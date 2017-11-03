@@ -1,7 +1,12 @@
 <div class="chatrooms">
-    <h1>Bloc Chat</h1>
-    <h3>Rooms</h3>
-    <h5 ng-repeat="room in home.rooms"></h5>
+    <h1 class="title">Bloc Chat</h1>
+    <table class="roomlist">
+      <tr class="room-row" ng-repeat="room in home.rooms">
+        <td class="individual-room">
+          <span>{{"Room " + ($index + 1)}}</span>
+        </td>
+      </tr>
+    </table>
 </div>
 <div class="main">
   <p>Filler</p>
