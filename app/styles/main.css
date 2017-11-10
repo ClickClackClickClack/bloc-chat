@@ -12,6 +12,11 @@
 .title {
   color: black;
 }
+
+.new-button {
+  display:
+  border: 1px solid black;
+}
 /*
 .main {
   position: absolute;
