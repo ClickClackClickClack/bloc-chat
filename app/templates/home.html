@@ -1,8 +1,6 @@
 <div class="chatrooms">
     <h1 class="title">Bloc Chat</h1>
-    <a ui-sref="modal" class="navigation">
-      <span class="new-button">New Room</span>
-    </a>
+    <button ng-click="home.open()">New Room</button>
     <table class="roomlist">
       <tr class="room-row" ng-repeat="room in home.rooms">
         <td class="individual-room">
@@ -11,6 +9,6 @@
       </tr>
     </table>
 </div>
-<div class="main">
-  <p>Filler</p>
+<div>
+  <p>I shouldn't be seeing this text</p>
 </div>
