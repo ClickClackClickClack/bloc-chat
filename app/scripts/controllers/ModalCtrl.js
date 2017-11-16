@@ -1,10 +1,14 @@
 (function() {
-  function ModalCtrl(Room, $uibModal) {
-      
+  function ModalCtrl(Room, $uibModalInstance) {
+    this.close = function () {
+        console.log('Modal Controller Taking Over');
+        $uibModalInstance.dismiss('cancel');
+    };
+
   }
 
 
 angular
     .module('blocChat')
-    .controller('ModalCtrl',['Room', '$uibModal', ModalCtrl]);
+    .controller('ModalCtrl', ['Room', '$uibModalInstance', ModalCtrl]);
 })();
