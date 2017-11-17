@@ -1,9 +1,10 @@
 (function() {
   function ModalCtrl(Room, $uibModalInstance) {
     this.close = function () {
-        console.log('Modal Controller Taking Over');
         $uibModalInstance.dismiss('cancel');
     };
+
+    this.add = Room.add;
 
   }
 

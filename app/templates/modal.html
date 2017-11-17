@@ -2,8 +2,8 @@
 
     <h1>Create a Room</h1>
     <button class="close" ng-click="$modal.close()">Cancel</button>
-    <button class="create">Create Room</button>
+    <button class="create" ng-click="$modal.add()">Create Room</button>
     <form>
-      <input class="nameroom" type="text">New Room Name</input>
+      <input id="nameroom" type="text" value="New Room Name"></input>
     </form>
 </div>

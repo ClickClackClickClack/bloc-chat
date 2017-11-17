@@ -1,6 +1,6 @@
 (function() {
     function HomeCtrl(Room, $uibModal) {
-      console.log('Home Controller Son');
+      
       this.rooms = Room.all;
       this.open = function(){
         $uibModal.open({

@@ -2,4 +2,4 @@
 
      angular
          .module('blocChat')
-         .value('room', '{}');
+         .value('room', '{ }');
