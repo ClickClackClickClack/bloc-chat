@@ -13,9 +13,8 @@
       $scope.active = null;
 
       this.switch = function(index){
-        var currentRoom = this.rooms[index].name;
-        console.log(currentRoom);
-        $scope.active = currentRoom;
+        $scope.active = this.rooms[index].name;
+        
       }
     }
 
