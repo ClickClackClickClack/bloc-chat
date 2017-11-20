@@ -7,11 +7,11 @@
 
        Room.add = function(room) {
            var name = document.getElementById('nameroom').value;
-           console.log(name);
            room.name = name;
-           console.log(room);
            rooms.$add(room);
        }
+
+
 
        return Room;
     }

@@ -1,11 +1,23 @@
-<div class="chatrooms">
+<main>
+  <div class="chatrooms">
     <h1 class="title">Bloc Chat</h1>
     <button ng-click="home.open()">New Room</button>
     <table class="roomlist">
       <tr class="room-row" ng-repeat="room in home.rooms">
-        <td class="individual-room">
+        <td class="individual-room" ng-click="home.switch($index)">
           <span>{{home.rooms[$index].name}}</span>
         </td>
       </tr>
     </table>
-</div>
+  </div>
+  <div class="messagelist">
+    <span>{{active}}</span>
+    <table>
+      <tr class="message-row">
+        <td class="message">
+          <span>{{"message"}}</span><span>{{"date"}}</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</main>

@@ -21,3 +21,11 @@
   width: 300px;
   color: black;
 }
+
+.messagelist {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 400px;
+  height: 500px;
+}
