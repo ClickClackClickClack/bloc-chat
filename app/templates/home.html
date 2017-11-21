@@ -4,7 +4,7 @@
     <button ng-click="home.open()">New Room</button>
     <table class="roomlist">
       <tr class="room-row" ng-repeat="room in home.rooms">
-        <td class="individual-room" ng-click="home.switch($index)">
+        <td class="individual-room" ng-click="home.switch($index); home.getByRoomId($index)">
           <span>{{home.rooms[$index].name}}</span>
         </td>
       </tr>
