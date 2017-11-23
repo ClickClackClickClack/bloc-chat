@@ -13,9 +13,9 @@
   <div class="messagelist">
     <span>{{active}}</span>
     <table>
-      <tr class="message-row">
+      <tr class="message-row" ng-repeat="message in home.messages">
         <td class="message">
-          <span>{{"message"}}</span><span>{{"date"}}</span>
+          <span class="username">{{home.messages[$index].username}}</span><span class="content">{{home.messages[$index].content}}</span><span class="timestamp">{{home.messages[$index].sentAt}}</span>
         </td>
       </tr>
     </table>

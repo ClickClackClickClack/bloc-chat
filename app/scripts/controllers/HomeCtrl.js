@@ -1,7 +1,7 @@
 (function() {
     function HomeCtrl(Room, $uibModal, $scope, Message) {
       this.rooms = Room.all;
-      this.messages = Message.all;
+      this.messages = null;
       this.open = function(){
         $uibModal.open({
           templateUrl: 'templates/modal.html',
@@ -19,9 +19,7 @@
 
       this.getByRoomId = function(index) {
         var RoomID = this.rooms[index].$id;
-         //console.log(RoomID);
-         //console.log(this.messages);
-         Message.getByRoomId(RoomID);
+        this.messages = Message.getByRoomId(RoomID);
       }
     }
 
