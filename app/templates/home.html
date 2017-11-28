@@ -10,7 +10,7 @@
       </tr>
     </table>
   </div>
-  <div class="messagelist">
+  <div class="message-list">
     <span>{{active}}</span>
     <table>
       <tr class="message-row" ng-repeat="message in home.messages">
@@ -19,5 +19,9 @@
         </td>
       </tr>
     </table>
+    <form class="new-message">
+      <input class="new-text" id="message-text" type="text" placeholder="Type your message here"></input>
+      <button class="send-message" ng-click="home.send()">Send</button>
+    </form>
   </div>
 </main>

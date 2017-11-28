@@ -12,7 +12,10 @@
 
     };
 
-
+    Message.send = function(){
+      //var message = document.getElementById('message-text').value;
+      //console.log(message);
+    };
 
     return Message;
     };

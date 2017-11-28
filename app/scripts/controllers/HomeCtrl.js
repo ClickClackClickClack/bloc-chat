@@ -21,6 +21,11 @@
         var RoomID = this.rooms[index].$id;
         this.messages = Message.getByRoomId(RoomID);
       }
+
+      this.send = function() {
+        var message = document.getElementById('message-text').value;
+        Message.send(message);
+      }
     }
 
     angular
