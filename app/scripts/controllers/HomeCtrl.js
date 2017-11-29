@@ -13,8 +13,11 @@
 
       $scope.active = null;
 
+      $scope.id = null;
+
       this.switch = function(index){
         $scope.active = this.rooms[index].name;
+        $scope.id = this.rooms[index].$id;
       }
 
       this.getByRoomId = function(index) {
@@ -24,7 +27,8 @@
 
       this.send = function() {
         var message = document.getElementById('message-text').value;
-        Message.send(message);
+        var RoomID = $scope.id;
+        Message.send(message, RoomID);
       }
     }
 

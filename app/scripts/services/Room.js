@@ -7,7 +7,9 @@
 
        Room.add = function(room) {
            var name = document.getElementById('nameroom').value;
+           console.log(room);
            room.name = name;
+           console.log(room);
            rooms.$add(room);
        }
 
